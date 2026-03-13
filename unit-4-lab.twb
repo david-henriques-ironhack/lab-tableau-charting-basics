@@ -1,0 +1,1236 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='modified_data' inline='true' name='federated.1cgbo420tyd2vr19y74lj1lok8uq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='modified_data' name='textscan.1cgyq5o0g3qvqm148bbt80ptz8ut'>
+            <connection class='textscan' directory='C:/Users/mario/Documents/DSMLAISL LEARNING PATH/PY REPOSITORIES/Labs/lab-tableau-charting-basics/files_for_lab' filename='modified_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1cgyq5o0g3qvqm148bbt80ptz8ut' name='modified_data.csv' table='[modified_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Customer' ordinal='0' />
+            <column datatype='string' name='State' ordinal='1' />
+            <column datatype='real' name='Customer Lifetime Value' ordinal='2' />
+            <column datatype='string' name='Response' ordinal='3' />
+            <column datatype='string' name='Coverage' ordinal='4' />
+            <column datatype='string' name='Education' ordinal='5' />
+            <column datatype='date' name='Effective To Date' ordinal='6' />
+            <column datatype='string' name='EmploymentStatus' ordinal='7' />
+            <column datatype='string' name='Gender' ordinal='8' />
+            <column datatype='integer' name='Income' ordinal='9' />
+            <column datatype='string' name='Location Code' ordinal='10' />
+            <column datatype='string' name='Marital Status' ordinal='11' />
+            <column datatype='integer' name='Monthly Premium Auto' ordinal='12' />
+            <column datatype='integer' name='Months Since Last Claim' ordinal='13' />
+            <column datatype='integer' name='Months Since Policy Inception' ordinal='14' />
+            <column datatype='integer' name='Number of Open Complaints' ordinal='15' />
+            <column datatype='integer' name='Number of Policies' ordinal='16' />
+            <column datatype='string' name='Policy Type' ordinal='17' />
+            <column datatype='string' name='Policy' ordinal='18' />
+            <column datatype='string' name='Renew Offer Type' ordinal='19' />
+            <column datatype='string' name='Sales Channel' ordinal='20' />
+            <column datatype='real' name='Total Claim Amount' ordinal='21' />
+            <column datatype='string' name='Vehicle Class' ordinal='22' />
+            <column datatype='string' name='Vehicle Size' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Customer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Lifetime Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Customer Lifetime Value]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Customer Lifetime Value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Response]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Response</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Coverage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Coverage]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Coverage</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effective To Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Effective To Date]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Effective To Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EmploymentStatus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EmploymentStatus]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>EmploymentStatus</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Income]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Income</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location Code]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Location Code</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Premium Auto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monthly Premium Auto]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Monthly Premium Auto</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months Since Last Claim</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months Since Last Claim]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Months Since Last Claim</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Months Since Policy Inception</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Months Since Policy Inception]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Months Since Policy Inception</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Open Complaints</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Open Complaints]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Number of Open Complaints</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Policies</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Policies]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Number of Policies</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Policy Type]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Policy Type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Policy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Policy]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Policy</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Renew Offer Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Renew Offer Type]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Renew Offer Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Channel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sales Channel]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Sales Channel</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Claim Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Claim Amount]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Total Claim Amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle Class]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Vehicle Class</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle Size]</local-name>
+            <parent-name>[modified_data.csv]</parent-name>
+            <remote-alias>Vehicle Size</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='# Customers' datatype='integer' name='[Calculation_1428204080269074432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Customer])' />
+      </column>
+      <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='modified_data.csv' datatype='table' name='[__tableau_internal_object_id__].[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/mario/AppData/Local/Temp/TableauTemp/#TableauTemp_0gfttgw01rvuyt18fswyx0entuhs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/13/2026 08:25:09 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer</remote-alias>
+              <ordinal>0</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9134</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>1</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Lifetime Value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Customer Lifetime Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Lifetime Value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4310</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Response</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Response]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Response</remote-alias>
+              <ordinal>3</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Coverage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Coverage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Coverage</remote-alias>
+              <ordinal>4</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>5</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Effective To Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Effective To Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Effective To Date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EmploymentStatus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[EmploymentStatus]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EmploymentStatus</remote-alias>
+              <ordinal>7</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Income</remote-alias>
+              <ordinal>9</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3256</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location Code</remote-alias>
+              <ordinal>10</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>11</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthly Premium Auto</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monthly Premium Auto]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthly Premium Auto</remote-alias>
+              <ordinal>12</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>173</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months Since Last Claim</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months Since Last Claim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months Since Last Claim</remote-alias>
+              <ordinal>13</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Months Since Policy Inception</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Months Since Policy Inception]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Months Since Policy Inception</remote-alias>
+              <ordinal>14</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Open Complaints</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Open Complaints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Open Complaints</remote-alias>
+              <ordinal>15</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Policies</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Policies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Policies</remote-alias>
+              <ordinal>16</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy Type</remote-alias>
+              <ordinal>17</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Policy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Policy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Policy</remote-alias>
+              <ordinal>18</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Renew Offer Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Renew Offer Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Renew Offer Type</remote-alias>
+              <ordinal>19</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Channel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sales Channel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Channel</remote-alias>
+              <ordinal>20</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Claim Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Claim Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Claim Amount</remote-alias>
+              <ordinal>21</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2337</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Class</remote-alias>
+              <ordinal>22</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle Size</remote-alias>
+              <ordinal>23</ordinal>
+              <family>modified_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Netherlands&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='modified_data.csv' id='modified_data.csv_3CDC2986FA944B1E91D8BDBCCCF6A5CE'>
+            <properties context=''>
+              <relation connection='textscan.1cgyq5o0g3qvqm148bbt80ptz8ut' name='modified_data.csv' table='[modified_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Customer' ordinal='0' />
+                  <column datatype='string' name='State' ordinal='1' />
+                  <column datatype='real' name='Customer Lifetime Value' ordinal='2' />
+                  <column datatype='string' name='Response' ordinal='3' />
+                  <column datatype='string' name='Coverage' ordinal='4' />
+                  <column datatype='string' name='Education' ordinal='5' />
+                  <column datatype='date' name='Effective To Date' ordinal='6' />
+                  <column datatype='string' name='EmploymentStatus' ordinal='7' />
+                  <column datatype='string' name='Gender' ordinal='8' />
+                  <column datatype='integer' name='Income' ordinal='9' />
+                  <column datatype='string' name='Location Code' ordinal='10' />
+                  <column datatype='string' name='Marital Status' ordinal='11' />
+                  <column datatype='integer' name='Monthly Premium Auto' ordinal='12' />
+                  <column datatype='integer' name='Months Since Last Claim' ordinal='13' />
+                  <column datatype='integer' name='Months Since Policy Inception' ordinal='14' />
+                  <column datatype='integer' name='Number of Open Complaints' ordinal='15' />
+                  <column datatype='integer' name='Number of Policies' ordinal='16' />
+                  <column datatype='string' name='Policy Type' ordinal='17' />
+                  <column datatype='string' name='Policy' ordinal='18' />
+                  <column datatype='string' name='Renew Offer Type' ordinal='19' />
+                  <column datatype='string' name='Sales Channel' ordinal='20' />
+                  <column datatype='real' name='Total Claim Amount' ordinal='21' />
+                  <column datatype='string' name='Vehicle Class' ordinal='22' />
+                  <column datatype='string' name='Vehicle Size' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E9C3E1B4-7028-4FC1-8EF1-90B126A3BCEE}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Customers per gender </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='modified_data' name='federated.1cgbo420tyd2vr19y74lj1lok8uq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cgbo420tyd2vr19y74lj1lok8uq'>
+            <column caption='# Customers' datatype='integer' name='[Calculation_1428204080269074432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Customer])' />
+            </column>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1428204080269074432]' derivation='User' name='[usr:Calculation_1428204080269074432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[usr:Calculation_1428204080269074432:qk]</rows>
+        <cols>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:Gender:nk]</cols>
+      </table>
+      <simple-id uuid='{52479D07-D26C-4D12-969B-C79DB9C27B07}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Num of Customers per Employment Status &amp; Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='modified_data' name='federated.1cgbo420tyd2vr19y74lj1lok8uq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cgbo420tyd2vr19y74lj1lok8uq'>
+            <column caption='# Customers' datatype='integer' name='[Calculation_1428204080269074432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Customer])' />
+            </column>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column caption='Employment Status' datatype='string' name='[EmploymentStatus]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[EmploymentStatus]' derivation='None' name='[none:EmploymentStatus:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1428204080269074432]' derivation='User' name='[usr:Calculation_1428204080269074432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:EmploymentStatus:nk]' value='111' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[usr:Calculation_1428204080269074432:qk]</rows>
+        <cols>([federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:Gender:nk] / [federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:EmploymentStatus:nk])</cols>
+      </table>
+      <simple-id uuid='{A2C7891B-1E5C-4829-B775-D251FD8288FC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BFA3D5DC-B5B5-4987-90CD-BDD69FA22936}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4B9F1CDE-A8FD-482C-8059-976CAAB7A3F2}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:EmploymentStatus:nk]</field>
+            <field>[federated.1cgbo420tyd2vr19y74lj1lok8uq].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8E9231C5-8E3C-4764-9735-66B8C3EC660D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
